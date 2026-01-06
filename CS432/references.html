@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>References | CS 432</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<div class="container">
+    <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+   <aside class="sidebar">
+        <ul class="nav-links">
+           <li><a href="../index.html" style="font-weight: bold;">⬅ Main Home</a></li>
+            
+            <hr style="margin: 5px 0; border: 0; border-top: 1px solid #eee;">
+
+            <li><a href="cs432.html">Course Overview</a></li>
+            <li><a href="staff.html">Staff</a></li>
+            <li><a href="logistics.html">Grading Policy</a></li>
+            <li><a href="contents.html">Contents & Slides</a></li>
+           <li><a href="references.html" class="active">References</a></li>
+        </ul>
+    </aside>
+    <main>
+        <header>
+            <h1>Texts & References</h1>
+        </header>
+
+        <div class="card">
+            <ul style="list-style-type: square; padding-left: 20px;">
+                <li style="margin-bottom: 15px;">
+    <strong>[SKS]</strong> Abraham Silberschatz, Henry Korth, and S. Sudarshan.<br>
+    <a href="https://people.vts.su.ac.rs/~peti/Baze%20podataka/Literatura/Silberschatz-Database%20System%20Concepts%206th%20ed.pdf" target="_blank">
+        <em>Database System Concepts</em>
+    </a>. 6th Edition, McGraw-Hill Education, 2010. (Primary Textbook).
+</li>
+               <li style="margin-bottom: 15px;">
+    <strong>[HS]</strong> Joseph M. Hellerstein and Michael Stonebraker.<br>
+    <a href="https://dn790006.ca.archive.org/0/items/redbook-5th-edition/redbook-5th-edition.pdf" target="_blank">
+        <em>Readings in Database Systems</em>
+    </a>, 4th Edition, MIT Press, 2005.
+</li>
+               <li style="margin-bottom: 15px;">
+    <strong>[EN]</strong> Ramez Elmsari and Shamkant B. Navathe.<br>
+    <a href="https://people.inf.elte.hu/kiss/DB/fundamentals-of-database-systems.pdf" target="_blank">
+        <em>Database Systems</em>
+    </a> 6th Edition, Pearson, 2015.
+</li>
+            </ul>
+        </div>
+    </main>
+</div>
+<script>
+    function toggleMenu() { document.querySelector('.sidebar').classList.toggle('active'); }
+</script>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CS 432 | Home</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<div class="container">
+    <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+   <aside class="sidebar">
+        <ul class="nav-links">
+           <li><a href="../index.html" style="font-weight: bold;">⬅ Main Home</a></li>
+            
+            <hr style="margin: 5px 0; border: 0; border-top: 1px solid #eee;">
+
+            <li><a href="cs432.html" class="active">Course Overview</a></li>
+            <li><a href="staff.html">Staff</a></li>
+            <li><a href="logistics.html">Grading Policy</a></li>
+            <li><a href="contents.html">Contents & Slides</a></li>
+            <li><a href="references.html">References</a></li>
+        </ul>
+    </aside>
+
+    <main>
+        <header>
+            <h1>CS 432:Databases</h1>
+            <div style="font-size: 1.2rem; color: #666;">Jan-April 2025-26 | IIT Gandhinagar</div>
+        </header>
+
+        <div class="card">
+            <h3>Welcome</h3>
+            <p>Welcome to the course website for CS 432. This course covers the fundamentals of Database Management Systems (DBMS), focusing on the relational model, SQL, and database internals.</p>
+            <p><strong>Prerequisite:</strong> Data Structures and Algorithms-I [ES 242]</p>
+            <p><strong>Honour Code:</strong> <a href="https://iitgn.ac.in/students/honourcode">View Policy</a></p>
+        </div>
+
+        <div class="card">
+            <h3>Recent Announcements</h3>
+            <p><em>Jan 06:</em> Welcome to the Spring Semester! Please review the syllabus.</p>
+        </div>
+    </main>
+</div>
+<script>
+    function toggleMenu() { document.querySelector('.sidebar').classList.toggle('active'); }
+</script>
+</body>
+</html>

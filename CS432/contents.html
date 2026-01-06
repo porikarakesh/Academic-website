@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contents & Slides | CS 432</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<div class="container">
+    <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+   <aside class="sidebar">
+        <ul class="nav-links">
+            <li><a href="../index.html" style="font-weight: bold;">⬅ Main Home</a></li>
+            
+            <hr style="margin: 5px 0; border: 0; border-top: 1px solid #eee;">
+
+            <li><a href="cs432.html">Course Overview</a></li>
+            <li><a href="staff.html">Staff</a></li>
+            <li><a href="logistics.html">Grading Policy</a></li>
+           <li><a href="contents.html" class="active">Contents & Slides</a></li>
+            <li><a href="references.html">References</a></li>
+        </ul>
+    </aside>
+
+    <main>
+        <header>
+            <h1>Course Contents & Slides</h1>
+        </header>
+
+        <div class="card">
+            <h3>Key Topics</h3>
+            <p>The course will cover the following key topics in Database Systems:</p>
+            <ul style="column-count: 2; column-gap: 40px; margin-top: 20px;">
+                <li>Introduction to RDBMS</li>
+                <li>Structured Query Language (SQL)</li>
+                <li>Relational Algebra & ER Model</li>
+                <li>Relational Database Design</li>
+                <li>Storage and File Structure</li>
+                <li>Application Development</li>
+                <li>Indexing and Hashing</li>
+                <li>Query Processing</li>
+                <li>Query Optimization</li>
+                <li>Transactions</li>
+                <li>Concurrency Control</li>
+                <li>Recovery Systems</li>
+                <li>Introduction to No-SQL Databases</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h3>Lecture Slides</h3>
+            <p>Lecture slides will be uploaded here before/after each class.</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Lecture #</th>
+                        <th>Date</th>
+                        <th>Topic</th>
+                        <th>Material</th>
+                    </tr>
+                </thead>
+               <tbody>
+    <tr>
+        <td>L1</td>
+        <td>Jan 07</td>
+        <td>Introduction / Overview</td>
+        <td>
+            <a href="https://drive.google.com/..." target="_blank">Presentation 1</a>
+        </td>
+    </tr>
+</tbody>
+            </table>
+        </div>
+    </main>
+</div>
+<script>
+    function toggleMenu() { document.querySelector('.sidebar').classList.toggle('active'); }
+</script>
+</body>
+</html>

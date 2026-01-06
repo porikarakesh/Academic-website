@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prof. Yogesh Kumar Meena | IIT Gandhinagar</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .landing-container { max-width: 900px; margin: 0 auto; padding: 40px 20px; text-align: center; }
+        .profile-section { margin-bottom: 50px; animation: flyIn3D 0.6s ease-out; }
+        .profile-title { color: var(--secondary-color); font-size: 2.5rem; margin-bottom: 10px; }
+        .profile-subtitle { color: var(--primary-color); font-size: 1.2rem; font-weight: 500; }
+        
+        .course-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; text-align: left; margin-top: 30px; }
+        
+        /* Updated .course-card (Removed ::before and :hover::before) */
+        .course-card { 
+            background: #fff; 
+            border: 1px solid var(--border-color); 
+            border-radius: 12px; 
+            padding: 25px; 
+            transition: all 0.3s ease; 
+            position: relative; 
+            overflow: hidden; 
+            text-decoration: none; 
+            display: block; 
+        }
+        
+        .course-card:hover { 
+            transform: translateY(-10px); 
+            box-shadow: 0 15px 30px rgba(0, 98, 204, 0.15); 
+            border-color: var(--primary-color); 
+        }
+        
+        /* Deleted the '::before' block that created the colored band */
+        
+        .course-code { color: #666; font-size: 0.9rem; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; }
+        .course-name { color: var(--secondary-color); font-size: 1.4rem; margin: 10px 0; font-weight: 600; }
+        .course-term { color: var(--primary-color); font-size: 0.9rem; background: rgba(0, 98, 204, 0.1); padding: 4px 10px; border-radius: 20px; display: inline-block; }
+        
+        .course-card.disabled { opacity: 0.6; cursor: default; background: #f9f9f9; }
+        .course-card.disabled:hover { transform: none; box-shadow: none; border-color: var(--border-color); }
+    </style>
+</head>
+<body>
+
+    <div class="landing-container">
+        
+        <div class="profile-section">
+            <h1 class="profile-title">Prof. Yogesh Kumar Meena</h1>
+            <div class="profile-subtitle">Assistant Professor, CSE | IIT Gandhinagar</div>
+            <p style="max-width: 600px; margin: 20px auto; color: #555;">
+                Welcome to my academic portal. Below you will find resources and websites for the courses I am currently teaching, as well as archives of past semesters.
+            </p>
+        </div>
+
+        <hr style="border: 0; border-top: 1px solid #eee; margin: 40px 0;">
+
+        <h2 style="color: var(--secondary-color); margin-bottom: 20px;">Current Courses</h2>
+        
+        <div class="course-grid">
+            
+          <a href="cs432/cs432.html" class="course-card">
+                <div class="course-code">CS 432</div>
+                <div class="course-name">Databases</div>
+                <div class="course-term">Jan - April 2026</div>
+                <p style="color: #666; font-size: 0.95rem; margin-top: 15px;">
+                    Fundamentals of DBMS, SQL, Relational Algebra, and Database Internals.
+                </p>
+            </a>
+
+            <div class="course-card disabled">
+                <div class="course-code">CS 301</div>
+                <div class="course-name">Human Computer Interaction(HCI)</div>
+                <div class="course-term">Coming Soon</div>
+                <p style="color: #666; font-size: 0.95rem; margin-top: 15px;">
+                    Process management, memory management, and file systems.
+                </p>
+            </div>
+
+            <div class="course-card disabled">
+                <div class="course-code">CS 600</div>
+                <div class="course-name">Advanced Research</div>
+                <div class="course-term">TBA</div>
+                <p style="color: #666; font-size: 0.95rem; margin-top: 15px;">
+                    Research methodology and advanced topics in Computer Science.
+                </p>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+</html>
