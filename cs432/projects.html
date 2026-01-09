@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CS 432 | Projects</title>
+    <link rel="stylesheet" href="../style.css">
+    
+    <style>
+        /* Specific styles for the Projects Table */
+        table { 
+            width: 100%; 
+            border-collapse: collapse; 
+            margin-top: 15px; 
+            font-size: 0.95rem;
+        }
+        th, td { 
+            border: 1px solid #ddd; 
+            padding: 12px; 
+            text-align: left; 
+            vertical-align: top;
+        }
+        th { 
+            background-color: #f4f4f4; 
+            font-weight: bold; 
+            color: #333;
+        }
+        tr:nth-child(even) { background-color: #f9f9f9; }
+        
+        /* Style for the "Download" links */
+        .resource-link {
+            color: #0056b3;
+            text-decoration: none;
+            font-weight: 600;
+        }
+        .resource-link:hover { text-decoration: underline; }
+        
+        /* Status badge for "Coming Soon" */
+        .status-pending {
+            color: #666;
+            font-style: italic;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+    
+    <aside class="sidebar">
+        <ul class="nav-links">
+            <li><a href="../index.html" style="font-weight: bold;">⬅ Main Home</a></li>
+            
+            <hr style="margin: 5px 0; border: 0; border-top: 1px solid #eee;">
+
+            <li><a href="cs432.html">Course Overview</a></li>
+            <li><a href="staff.html">Staff</a></li>
+            <li><a href="logistics.html">Grading Policy</a></li>
+            <li><a href="contents.html">Contents & Slides</a></li>
+            <li><a href="projects.html" class="active">Course Projects</a></li>
+            <li><a href="casestudies.html">Case Studies</a></li>
+            <li><a href="references.html">References</a></li>
+        </ul>
+    </aside>
+
+    <main>
+        <header>
+            <h1>Course Projects</h1>
+            <div style="font-size: 1.2rem; color: #666;">CS 432: Databases</div>
+        </header>
+
+        <div class="card">
+            <h3>Submission Guidelines</h3>
+            <p>
+                All project submissions are due by 11:59 PM on the specified dates. 
+                Please ensure your code adheres to the academic honour code.
+            </p>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th style="width: 15%;">Project</th>
+                        <th>Topic</th>
+                        <th style="width: 15%;">Deadline</th>
+                        <th style="width: 20%;">Materials</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Project 1</strong></td>
+                        <td>Mini-Project 1</td>
+                        <td>#date</td>
+                        <td>
+                            <a href="projects/project1-specs.pdf" target="_blank" class="resource-link">
+                                ↓ Download PDF
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><strong>Project 2</strong></td>
+                        <td>Mini-Project 2</td>
+                        <td>#date</td>
+                        <td>
+                            <span class="status-pending">[Coming Soon]</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><strong>Project 3</strong></td>
+                        <td>Mini-Project 3</td>
+                        <td>#date</td>
+                        <td>
+                            <span class="status-pending">[Coming Soon]</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><strong>Project 4</strong></td>
+                        <td>Mini-Project 4</td>
+                        <td>#date</td>
+                        <td>
+                            <span class="status-pending">[Coming Soon]</span>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+</div>
+
+<script>
+    function toggleMenu() { document.querySelector('.sidebar').classList.toggle('active'); }
+</script>
+
+</body>
+</html>
